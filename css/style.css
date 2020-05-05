@@ -521,23 +521,26 @@ body {
         border-radius: 50%;
         height: 60px;
         width: 60px;
-        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-        cursor: pointer; }
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1); }
         .navbar__mobile .nav {
           float: none;
           display: none;
           right: -4000px;
           opacity: 0;
-          animation: fromright 3s ease-out forwards;
+          animation: fromright 2s ease-out forwards;
           position: fixed;
-          transition: all .3s ease-out;
+          transition: all .2s ease-out;
           font-size: 19px; }
           .navbar__mobile .nav__burger {
             display: block;
             list-style: none;
             position: fixed;
-            right: 30px;
-            padding: 14px 0; }
+            margin-top: 10px;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            cursor: pointer; }
             .navbar__mobile .nav__burger li {
               width: 30px;
               height: 4px;
@@ -547,7 +550,7 @@ body {
               position: fixed;
               top: 33px;
               right: 30px;
-              transition: all 0.2s ease-out; }
+              transition: all 0.1s linear; }
               .navbar__mobile .nav__burger li:nth-child(1) {
                 top: 43px;
                 transform: rotate(0); }
@@ -578,23 +581,28 @@ body {
           opacity: 0;
           animation: fromright 0.2s 0.1s ease-out forwards;
           width: 300px;
-          height: 200px;
+          height: 250px;
           top: 70px;
           right: 30px;
           position: fixed;
-          font-size: 19px; }
+          font-size: 19px;
+          border-radius: 50%; }
           .navbar__open .nav__item {
             display: block;
             padding: 2rem;
             margin: 0 auto;
-            text-align: center; }
+            text-align: center;
+            z-index: 2200; }
           .navbar__open .nav__burger {
             display: block;
             list-style: none;
             position: fixed;
-            right: 30px;
-            padding: 14px 0;
-            z-index: 3000; }
+            right: 20px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            top: 15px; }
             .navbar__open .nav__burger li {
               width: 30px;
               height: 4px;
@@ -606,8 +614,7 @@ body {
               transform-origin: center;
               position: fixed;
               top: 33px;
-              right: 30px;
-              transition: all 0.2s ease-out; }
+              right: 30px; }
               .navbar__open .nav__burger li:nth-child(1) {
                 transform: rotate(45deg);
                 top: 5.3rem; }
