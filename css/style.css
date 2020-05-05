@@ -550,12 +550,12 @@ body {
               position: fixed;
               top: 33px;
               right: 30px;
-              transition: all 0.1s linear; }
+              transition: all 0.1s; }
               .navbar__mobile .nav__burger li:nth-child(1) {
                 top: 43px;
                 transform: rotate(0); }
               .navbar__mobile .nav__burger li:nth-child(2) {
-                top: 53px;
+                top: 50px;
                 transform: rotate(0); }
               .navbar__mobile .nav__burger li:nth-child(3) {
                 top: 63px;
