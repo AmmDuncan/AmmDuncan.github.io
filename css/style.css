@@ -555,7 +555,7 @@ body {
                 top: 43px;
                 transform: rotate(0); }
               .navbar__mobile .nav__burger li:nth-child(2) {
-                top: 50px;
+                top: 53px;
                 transform: rotate(0); }
               .navbar__mobile .nav__burger li:nth-child(3) {
                 top: 63px;
@@ -620,6 +620,7 @@ body {
                 top: 5.3rem; }
               .navbar__open .nav__burger li:nth-child(2) {
                 width: 0;
+                top: 5.3rem;
                 right: 5.25rem; }
               .navbar__open .nav__burger li:nth-child(3) {
                 transform: rotate(-45deg);
