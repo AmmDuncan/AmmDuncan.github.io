@@ -450,14 +450,14 @@ body {
           font-size: 3rem;
           font-weight: 400; }
         .header .hero .heading__main {
-          margin-top: 2.5rem;
+          margin-top: 30px;
           font-size: 5.5rem;
           font-weight: 500;
           line-height: 100%;
           text-align: center;
           margin: 5%; }
         .header .hero .heading__sub2 {
-          margin: 2rem auto 2.5rem; }
+          margin: 25px auto 45px; }
           .header .hero .heading__sub2--list {
             padding: 0;
             margin: 0 5%; }
@@ -478,14 +478,14 @@ body {
   @media screen and (max-width: 599px) {
     .header .hero {
       background-attachment: unset;
-      height: 65rem;
+      height: 700px;
       clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%); } }
 
 .navbar {
   height: 7rem;
   background-color: #fff;
   box-shadow: 0px 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
-  transition: all 0.2s ease-out; }
+  transition: all 0.15s ease-out; }
   .navbar::after {
     content: "";
     display: table;
@@ -524,39 +524,50 @@ body {
       .navbar__mobile {
         position: fixed;
         z-index: 1500;
-        right: 3rem;
-        top: 3rem;
+        right: 30px;
+        top: 30px;
         border-radius: 50%;
-        height: 6rem;
-        width: 6rem;
-        box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
+        height: 60px;
+        width: 60px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
         cursor: pointer; }
-        .navbar__mobile .nav__burger {
-          display: block;
-          list-style: none;
-          position: fixed;
-          right: 40px;
-          padding: 14px 0; }
-          .navbar__mobile .nav__burger li {
-            width: 3rem;
-            height: 0.4rem;
-            margin: 0 auto;
-            background-color: rgba(20, 7, 78, 0.85);
-            margin: 0.5rem;
-            border-radius: .3rem;
+        .navbar__mobile .nav {
+          display: none;
+          opacity: 0;
+          animation: fromright 0.3s 0.15s ease-out forwards;
+          width: 300px;
+          height: 200px;
+          right: 230px;
+          top: 274px;
+          position: relative;
+          font-size: 19px; }
+          .navbar__mobile .nav__burger {
+            display: block;
+            list-style: none;
             position: fixed;
-            top: 3.3em;
-            right: 4rem;
-            animation: none;
-            transition: all 0.2s ease-out; }
-            .navbar__mobile .nav__burger li:nth-child(1) {
-              top: 4.3rem;
-              transform: rotate(0); }
-            .navbar__mobile .nav__burger li:nth-child(2) {
-              transform: rotate(0); }
-            .navbar__mobile .nav__burger li:nth-child(3) {
-              top: 6.3rem;
-              transform: rotate(0); } }
+            right: 40px;
+            padding: 14px 0; }
+            .navbar__mobile .nav__burger li {
+              width: 30px;
+              height: 4px;
+              margin: 0 auto;
+              background-color: rgba(20, 7, 78, 0.85);
+              margin: 5px;
+              border-radius: .3rem;
+              position: fixed;
+              top: 33px;
+              right: 40px;
+              animation: none;
+              transition: all 0.2s ease-out; }
+              .navbar__mobile .nav__burger li:nth-child(1) {
+                top: 43px;
+                transform: rotate(0); }
+              .navbar__mobile .nav__burger li:nth-child(2) {
+                top: 53px;
+                transform: rotate(0); }
+              .navbar__mobile .nav__burger li:nth-child(3) {
+                top: 63px;
+                transform: rotate(0); } }
   .navbar__open {
     /******************************/
     /*MEDIA QUERY BREAKPOINT 767px*/
@@ -571,7 +582,7 @@ body {
         .navbar__open .nav {
           display: block;
           opacity: 0;
-          animation: fromright 0.3s 0.3s ease-out forwards;
+          animation: fromright 0.3s 0.15s ease-out forwards;
           width: 300px;
           height: 200px;
           right: 230px;
@@ -587,20 +598,20 @@ body {
             display: block;
             list-style: none;
             position: fixed;
-            right: 4rem;
-            padding: 1.4rem 0; }
+            right: 40px;
+            padding: 14px 0; }
             .navbar__open .nav__burger li {
-              width: 3rem;
-              height: 0.4rem;
+              width: 30px;
+              height: 4px;
               margin: 0 auto;
               background-color: rgba(20, 7, 78, 0.85);
-              margin: 0.5rem;
-              border-radius: .3rem;
+              margin: 5px;
+              border-radius: 3px;
               transform: rotate(0deg);
               transform-origin: center;
               position: fixed;
-              top: 3.3em;
-              right: 4rem;
+              top: 33px;
+              right: 40px;
               transition: all 0.2s ease-out; }
               .navbar__open .nav__burger li:nth-child(1) {
                 transform: rotate(45deg);
@@ -639,7 +650,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 *6rem)); }
 
 .projects {
-  background: rgba(188, 188, 188, 0.1);
+  background: rgba(188, 188, 188, 0.22);
   padding: 18rem 0rem 10rem;
   margin-top: -11rem;
   /******************************/
@@ -674,7 +685,7 @@ body {
     .projects__card--image {
       width: 100%;
       height: 82%;
-      background: rgba(188, 188, 188, 0.3);
+      background: rgba(188, 188, 188, 0.15);
       border-radius: 0.5rem 0.5rem 0rem 0rem; }
     .projects__card--name {
       width: 100%;
@@ -761,6 +772,7 @@ body {
   position: relative;
   box-sizing: border-box;
   box-shadow: 0 0.5rem 1rem rgba(119, 119, 119, 0.4);
+  background-color: rgba(247, 247, 247, 0.4);
   /******************************/
   /*MEDIA QUERY BREAKPOINT 992px*/
   /******************************/
