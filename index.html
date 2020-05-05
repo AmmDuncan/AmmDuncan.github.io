@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammiel Yawson</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar__mobile">
+            <div class="container">
+                <ul class="nav__burger">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="nav">
+                    <!-- <li><a href="#">Home</a></li> -->
+                    <li class="nav__item"><a class="nav__link" href="#">Projects</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Drawings</a></li>
+                    <li class="nav__item"><a href="#" class="button button--contact">Contact Me</a></li>
+                </ul>
+            </div>   
+        </nav>
+
+        <section class="hero">
+            <div class="container">
+                <h1 class="heading">
+                    <span class="heading__sub1">
+                        Hi, I'm
+                    </span>
+                    <span class="heading__main">
+                        Ammiel Yawson
+                    </span>
+                </h1>
+                    <div class="heading__sub2">
+                        <ul class="heading__sub2--list">
+                            <li>Front-End Developer</li>
+                            <li>Pencil Portrait Artist</li>
+                            <li>Data Scientist</li>
+                        </ul>
+                    </div>
+                
+                <div class="calls-to-action">
+                    <a class="button button--full" href="#">Explore projects</a>
+                      <a class="button button--empty" href="#">View my art</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="projects" >
+        <div class="container" >
+            <div data-aos="fade-down">
+                <h2 class="section__content--title" data-aos="fade-down">
+                    Projects
+                </h2>
+                <p class="section__content--paragraph">
+                    I have designed websites for both existing and imaginary entities (:D). <br>So take a tour through my collection
+                    and maybe (just maybe) something may appeal to you.
+                </p>
+            </div>
+    
+            <div class="projects__cards" data-aos="fade-up">
+
+                <figure class="projects__card">
+                    <div class="projects__card--image"></div>
+                    <figcaption class="projects__card--name">Sample Name</figcaption>
+                </figure>
+
+                <figure class="projects__card">
+                    <div class="projects__card--image"></div>
+                    <figcaption class="projects__card--name">Sample Name</figcaption>
+                </figure>
+
+                <figure class="projects__card">
+                    <div class="projects__card--image"></div>
+                    <figcaption class="projects__card--name">Sample Name</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="center-contain">
+                <a href="" class="button button--indoc" data-aos="fade-up">Take Tour &rarr;</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="drawings">
+        <div class="container">
+            <div class="drawings__imagecontainer">
+                <div class="drawings__imagelist">
+                    <img src="img/pic-1.jpg" alt="" class="drawings__images drawings__images--1" data-aos="fade-right">
+                    <img src="img/pic-2.jpg" alt="" class="drawings__images drawings__images--2" data-aos="fade-right">
+                    <img src="img/pic-3.jpg" alt="" class="drawings__images drawings__images--3" data-aos="fade-right">
+                </div>
+            </div>
+            <div class="drawings__content" data-aos="fade-left">
+                <h2 class="section__content--title">
+                    Drawings
+                </h2>
+                <div class="section__content--paragraph">
+                    I make portrait drawings in graphite and charcoal. I have built a collection 
+                    of drawings, some on orders and others just for fun. 
+                    <br>Follow the link to feast your eyes on some beauty.
+                </div>
+                <div class="left-contain mg-t-3">
+                    <a href="" class="button button--indoc">Enter Gallery &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 700
+        });
+      </script>
+      <script>
+          const nav = document.querySelector(".navbar__mobile");
+
+          console.log(nav.classList)
+          nav.addEventListener('click', () => {
+                if (nav.classList.contains("navbar__open")){
+
+                    nav.classList.remove('navbar__open')
+
+                } else {
+                    nav.classList.add('navbar__open')
+                }
+          })
+
+      </script>
+</body>
+</html>
