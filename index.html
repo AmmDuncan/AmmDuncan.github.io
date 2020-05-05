@@ -125,17 +125,21 @@
       </script>
       <script>
           const nav = document.querySelector(".navbar__mobile");
-
+          const btn = document.querySelector(".nav__burger");
+          
           console.log(nav.classList)
-          nav.addEventListener('click', () => {
-                if (nav.classList.contains("navbar__open")){
+          btn.addEventListener('click', () => {
+                if (!nav.classList.contains("navbar__open")){
 
-                    nav.classList.remove('navbar__open')
+                    nav.classList.add('navbar__open')
 
                 } else {
-                    nav.classList.add('navbar__open')
+                    nav.classList.remove('navbar__open')
                 }
-          })
+            })
+            // btn.addEventListener('click', () => {
+            //     nav.classList.remove('navbar__open')
+            // })
 
       </script>
 </body>
