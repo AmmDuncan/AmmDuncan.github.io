@@ -526,9 +526,10 @@ body {
         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
         cursor: pointer; }
         .navbar__mobile .nav {
+          float: none;
           display: none;
           opacity: 0;
-          animation: fromright 0.3s 0.15s ease-out forwards;
+          animation: fromright 3s 0.15s ease-out forwards;
           width: 0px;
           height: 0px;
           right: 0px;
