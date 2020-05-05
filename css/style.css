@@ -650,7 +650,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 *6rem)); }
 
 .projects {
-  background: rgba(188, 188, 188, 0.22);
+  background: rgba(188, 188, 188, 0.3);
   padding: 18rem 0rem 10rem;
   margin-top: -11rem;
   /******************************/
