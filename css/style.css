@@ -496,10 +496,7 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
     height: 7rem;
-    box-sizing: border-box;
-    /******************************/
-    /*MEDIA QUERY BREAKPOINT 767px*/
-    /******************************/ }
+    box-sizing: border-box; }
     .navbar .nav__burger {
       display: none; }
     .navbar .nav__link {
@@ -513,9 +510,6 @@ body {
     .navbar .nav__item {
       display: inline-block;
       padding: 0.9rem; }
-    @media screen and (max-width: 767px) {
-      .navbar .nav {
-        display: none; } }
   .navbar__mobile {
     /******************************/
     /*MEDIA QUERY BREAKPOINT 767px*/
