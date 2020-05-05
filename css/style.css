@@ -56,7 +56,7 @@ body {
 
 @keyframes fromright {
   from {
-    transform: translateX(4rem);
+    transform: translateX(3rem);
     opacity: 0; }
   to {
     transform: translateX(0);
@@ -530,10 +530,6 @@ body {
           display: none;
           opacity: 0;
           animation: fromright 3s 0.15s ease-out forwards;
-          width: 0px;
-          height: 0px;
-          right: 0px;
-          top: 0px;
           position: relative;
           font-size: 19px; }
           .navbar__mobile .nav__burger {
@@ -585,9 +581,9 @@ body {
           animation: fromright 0.3s 0.15s ease-out forwards;
           width: 300px;
           height: 200px;
-          right: 220px;
+          right: 276px;
           top: 274px;
-          position: relative;
+          position: absolute;
           font-size: 19px; }
           .navbar__open .nav__item {
             display: block;
