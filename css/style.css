@@ -485,11 +485,7 @@ body {
   height: 7rem;
   background-color: #fff;
   box-shadow: 0px 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
-  transition: all 0.15s ease-out;
-  width: 100%;
-  top: 0px;
-  right: 0px;
-  border-radius: 0px; }
+  transition: all 0.15s ease-out; }
   .navbar::after {
     content: "";
     display: table;
@@ -573,6 +569,11 @@ body {
                 top: 63px;
                 transform: rotate(0); } }
   .navbar__open {
+    height: 0px;
+    width: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: #dedef8;
     /******************************/
     /*MEDIA QUERY BREAKPOINT 767px*/
     /******************************/ }
