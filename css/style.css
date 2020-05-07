@@ -612,11 +612,13 @@ body {
 }
 .navbar .nav__link:hover, .navbar .nav__link:active {
   color: #e71a4e;
-  transform: scale(1.1);
 }
 .navbar .nav__item {
   display: inline-block;
   padding: 0.9rem;
+}
+.navbar .nav__item:hover {
+  transform: scale(1.05);
 }
 .navbar__mobile {
   /******************************/
