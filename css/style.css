@@ -617,9 +617,6 @@ body {
   display: inline-block;
   padding: 0.9rem;
 }
-.navbar .nav__item:hover {
-  transform: scale(1.05);
-}
 .navbar__mobile {
   /******************************/
   /*MEDIA QUERY BREAKPOINT 767px*/
