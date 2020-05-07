@@ -757,9 +757,10 @@ body {
     top: 5.3rem;
   }
 }
-@media screen and (max-width: 360) {
+@media screen and (max-width: 360px) {
   .navbar__open .nav {
-    right: 20px;
+    right: 18px;
+    width: 250px;
   }
 }
 
