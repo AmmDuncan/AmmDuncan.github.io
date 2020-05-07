@@ -612,7 +612,7 @@ body {
 }
 .navbar .nav__link:hover, .navbar .nav__link:active {
   color: #e71a4e;
-  font-size: 2rem;
+  transform: scale(1.1);
 }
 .navbar .nav__item {
   display: inline-block;
