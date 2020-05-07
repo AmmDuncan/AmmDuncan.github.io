@@ -707,7 +707,7 @@ body {
     width: 300px;
     height: 250px;
     top: 70px;
-    right: 30px;
+    right: 28px;
     position: fixed;
     font-size: 19px;
     border-radius: 50%;
@@ -757,7 +757,7 @@ body {
     top: 5.3rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 350px) {
   .navbar__open .nav {
     right: 18px;
     width: 250px;
