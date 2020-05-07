@@ -139,9 +139,14 @@
                     nav.classList.remove('navbar__open')
                 }
           })
+
           nav_link.addEventListener('mouseover', () => {
               nav_link.parentElement.style.transform = "scale(1.1)";
-          })  
+          })
+
+          nav_link.addEventListener('mouseout', () => {
+            nav_link.parentElement.style.transform = "scale(1)";
+          })
 
         
             // btn.addEventListener('click', () => {
