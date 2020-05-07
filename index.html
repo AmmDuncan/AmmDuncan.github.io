@@ -140,7 +140,7 @@
                 }
           })
 
-          forEach(nav_link in nav_links){
+          forEach((nav_link) => {
                 nav_link.addEventListener('mouseover', () => {
                 nav_link.parentElement.style.transform = "scale(1.1)";
             })
@@ -148,7 +148,7 @@
                 nav_link.addEventListener('mouseout', () => {
                 nav_link.parentElement.style.transform = "scale(1)";
             })
-          }
+          })
           
 
         
