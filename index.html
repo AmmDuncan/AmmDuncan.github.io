@@ -126,7 +126,7 @@
       <script>
           const nav = document.querySelector(".navbar__mobile");
           const btn = document.querySelector(".nav__burger");
-          const nav_link = document.querySelectorAll(".nav__link");
+          const nav_links = document.querySelectorAll(".nav__link");
           const nav_item = document.querySelector(".nav__item");
           
         //   console.log(nav.classList)
@@ -140,13 +140,16 @@
                 }
           })
 
-          nav_link.addEventListener('mouseover', () => {
-              nav_link.parentElement.style.transform = "scale(1.1)";
-          })
+          forEach(nav_link in nav_links){
+                nav_link.addEventListener('mouseover', () => {
+                nav_link.parentElement.style.transform = "scale(1.1)";
+            })
 
-          nav_link.addEventListener('mouseout', () => {
-            nav_link.parentElement.style.transform = "scale(1)";
-          })
+                nav_link.addEventListener('mouseout', () => {
+                nav_link.parentElement.style.transform = "scale(1)";
+            })
+          }
+          
 
         
             // btn.addEventListener('click', () => {
