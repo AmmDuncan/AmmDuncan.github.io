@@ -150,11 +150,22 @@
             })
           })
           
+          /*********************/
+          /*BACKGROUND CHANGING*/
+          /*********************/
+          const hero = document.querySelector(".hero");
+          
+          var i = 0;
+          
+          function changebg(){
+              let bgs = ["bg-pic.jpg", "bg-pic1.jpg", "bg-pic2.jpg"];
+              let image = bgs[(i + 1) % bgs.length];
+              hero.style.backgroundImage = `linear-gradient(to bottom right, rgba(0, 85, 165, 0.6), rgba(87, 8, 124, 0.6)), url('img/${image}')`;
+              return i++;
+          }
+          
 
-        
-            // btn.addEventListener('click', () => {
-            //     nav.classList.remove('navbar__open')
-            // })
+          setInterval(changebg, 4000)
 
       </script>
 </body>

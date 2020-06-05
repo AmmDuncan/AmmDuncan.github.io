@@ -429,7 +429,7 @@ body {
 /**/
 /**/
 .header .hero {
-  background-image: linear-gradient(to bottom right, rgba(0, 85, 165, 0.78), rgba(87, 8, 124, 0.78)), url("../img/bg-pic.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0, 85, 165, 0.75), rgba(87, 8, 124, 0.75)), url("../img/bg-pic.jpg");
   height: 55rem;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
   background-attachment: fixed;
@@ -437,6 +437,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Open Sans", sans-serif;
+  transition: background 0.5s ease-out;
 }
 .header .hero .heading {
   padding-top: 8rem;
