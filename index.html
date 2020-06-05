@@ -162,7 +162,7 @@
           function changebg(){
               let bgs = ["bg-pic.jpg", "bg-pic1.jpg", "bg-pic2.jpg"];
               let image = bgs[(i + 1) % bgs.length];
-              hero.style.backgroundImage = `linear-gradient(to bottom right, rgba(0, 85, 165, 0.75), rgba(87, 8, 124, 0.75)), url('img/${image}')`;
+              hero.style.backgroundImage = `linear-gradient(to bottom right, rgba(0, 85, 165, 0.75), rgba(87, 8, 124, 0.75)), url('img/${image}'), url('img/${image}thumb')`;
               return i++;
           }
           
