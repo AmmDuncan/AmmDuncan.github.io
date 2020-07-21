@@ -191,6 +191,13 @@ body {
   padding: 0.8rem 4rem;
   display: inline-block;
   border-radius: 0.5rem;
+  transition: background-color 0.5s ease-out;
+}
+@media screen and (min-width: 768px) {
+  .button--contact:link, .button--contact:visited {
+    margin-right: 3rem;
+    border-radius: 5rem;
+  }
 }
 .button--indoc {
   box-sizing: border-box;
@@ -596,7 +603,7 @@ body {
 .navbar {
   height: 7rem;
   background-color: transparent;
-  transition: all 0.15s ease-out, background-color 0.2s ease-out;
+  transition: all 0.15s ease-out, background-color 0.35s ease-out;
   z-index: 2000;
   position: relative;
 }
