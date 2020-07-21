@@ -901,6 +901,11 @@ body {
   box-sizing: border-box;
   font-weight: 600;
 }
+@media screen only and (max-width: 767px) {
+  .projects__card--name {
+    font-size: 1.3rem;
+  }
+}
 .projects__card:not(:last-child) {
   margin-right: 4.5%;
 }
